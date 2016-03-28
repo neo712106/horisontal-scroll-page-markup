@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta property="og:title" content="UFC197 Fans Battle! Who win?" />
+	<meta property="og:description" content="Support Jones or Cormier ? Help your favourite fighter on our fan game! LOL!" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="http://s019.radikal.ru/i638/1603/0b/d672971cbef8.jpg" />
+	<title>jInvertScroll Demo Page</title>
+    <link rel="stylesheet" href="css/example.css" />
+</head>
+<body>
+   <div class="container">
+	    <div class="main ">
+	        <div class="first-screen">
+	        	<div class="top">
+	        		<div class="logo"><a href="index.htm"></a></div>
+					<div class="top-text">
+						<div class="t1">this is the fan’s battle for ufc197</div>
+						<div class="t2">You must <strong>choose</strong> your favourite fighter and gain 1 point for him </div>
+					</div>
+	        	</div>
+				<div class="content">
+					<div class="box">
+						<div class="man"><a href="jones.htm"></a></div>
+						<div class="t3">Jon “bones” jones</div>
+						<div class="t4">21 - 1</div>
+					</div>
+					<div class="box middle">
+						<div class="icon1"></div>
+						<div class="icon2"><a target="_blank" href="https://www.facebook.com/s0z1n"></a></div>
+						<div class="vs">vs</div>
+						<div class="t4">Sat, apr 23<br>Las vegas, nevada</div>
+					</div>
+					<div class="box">
+						<div class="man man2"><a href="cormier.htm"></a></div>
+						<div class="t3">daniel “DC” cormier</div>
+						<div class="t4 t5">17 - 1</div>
+					</div>
+				</div>
+				<div class="foot">
+				<script type="text/javascript">(function() {
+				  if (window.pluso)if (typeof window.pluso.start == "function") return;
+				  if (window.ifpluso==undefined) { window.ifpluso = 1;
+				    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+				    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+				    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+				    var h=d[g]('body')[0];
+				    h.appendChild(s);
+				  }})();</script>
+				<div class="pluso" data-background="transparent" data-options="big,round,line,horizontal,counter,theme=07" data-services="vkontakte,facebook,twitter" data-url="http://egorwebfrontdev.tk/my_resume/" data-title="UFC197 Fans Battle! Who win?" data-description="Support Jones or Cormier ? Help your favourite fighter on our fan game! LOL!"></div>
+				</div>
+	        </div>
+	    </div>
+    </div>
+    <script type="text/javascript" src="../libs/jquery.min.js"></script>
+	<script>
+		 jQuery(document).ready(function($){
+		 	//adaptive for screen 15
+			var wh = $(window).height()
+			if(wh <= 900){
+				$('.container').addClass('screen15');
+			}
+		});
+	</script>
+</body>
+</html>

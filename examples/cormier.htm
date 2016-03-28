@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta property="og:title" content="UFC197 Fans Battle! Who win?" />
+	<meta property="og:description" content="Support Jones or Cormier ? Help your favourite fighter on our fan game! LOL!" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="http://s019.radikal.ru/i638/1603/0b/d672971cbef8.jpg" />
+	<title>jInvertScroll Demo Page</title>
+    <link rel="stylesheet" href="css/example.css" />
+</head>
+<body>
+   <div class="container man2">
+    
+    <div class="horizon scroll">
+       <!-- <img src="images/bg.jpg" alt="" />-->
+    </div>
+    <div class="middle scroll">
+         <!--<img src="images/middle.png" alt="" />-->
+    </div>
+    <div class="front scroll">
+    	
+        <div class="first-screen">
+        	<div class="top">
+        		<div class="logo"><a href="index.htm"></a></div>
+				<div class="top-text">
+					<div class="t1"><span>you have choosen</span> d. cormier</div>
+					<div class="t2"><strong>Scroll</strong> to the bottom of the page<br>and let Jones to smoke more weed. </div>
+				</div>
+        	</div>
+			<div class="content">
+				<div class="man"></div>
+				<div class="text">
+					<div class="mt">When he gets stoned<br>you will be rewarded 1 point</div>
+					<ul class="lifs">						<li class="item1"></li>						<li class="item2"></li>						<li class="item3"></li>						<li class="item4"></li>						<li class="item5"></li>					</ul>
+				</div>
+			</div>
+			<div class="foot">made in web studio<br><a target="_blank" href="https://www.facebook.com/s0z1n"><img src="images/foot-ico.png" alt=""></a></div>
+        </div>
+		
+		<div class="weed weed1"></div>
+		<div class="weed weed2"></div>
+		<div class="weed weed3"></div>
+		<div class="weed weed4"></div>
+		<div class="weed weed5"></div>
+		
+		<div class="prot">
+			<div class="top">
+        		<div class="logo"><a href="index.htm"></a></div>
+				<div class="top-text">
+					<div class="t1">now <span>j. jones</span> can’t fight</div>
+					<div class="t2">daniel fan’s are <strong>getting 1 point!</strong></div>
+				</div>
+        	</div>
+			<div class="content">
+				<div class="man"></div>
+				<div class="text">
+					<h3>Total fan’s score</h3>
+					<div class="ico"></div>
+					<ul class="proc">						<li>35</li>						<li>65</li>					</ul>
+					<h4>share with the other fans</h4>
+					<script type="text/javascript">(function() {
+				  if (window.pluso)if (typeof window.pluso.start == "function") return;
+				  if (window.ifpluso==undefined) { window.ifpluso = 1;
+				    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+				    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+				    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+				    var h=d[g]('body')[0];
+				    h.appendChild(s);
+				  }})();</script>
+				<div class="pluso" data-background="transparent" data-options="big,round,line,horizontal,counter,theme=07" data-services="vkontakte,facebook,twitter" data-url="http://egorwebfrontdev.tk/my_resume/" data-title="UFC197 Fans Battle! Who win?" data-description="Support Jones or Cormier ? Help your favourite fighter on our fan game! LOL!"></div>
+				</div>
+			</div>
+			<div class="foot"><strong>it’s a joke. we love and respect all fighters</strong><br><a target="_blank" href="https://www.facebook.com/s0z1n"><img src="images/foot-ico.png" alt=""></a></div>
+		</div>
+		
+    </div>
+	
+    </div>
+    <script type="text/javascript" src="../libs/jquery.min.js"></script>
+    <script type="text/javascript" src="../dist/js/jquery.jInvertScroll.js"></script>
+    <script type="text/javascript">
+    (function($) {
+        $.jInvertScroll(['.scroll'],
+            {
+            height: 6000,                   // optional: define the height the user can scroll, otherwise the overall length will be taken as scrollable height
+            onScroll: function(percent) {   //optional: callback function that will be called when the user scrolls down, useful for animating other things on the page
+                console.log(percent);
+				if(percent >= '0.1982'){
+					$('.first-screen .man').addClass('active')
+				}
+				if(percent >= '0.1871'){
+					$('.weed1').hide()
+					$('.man2 .first-screen .man').addClass('st1');
+					$('.lifs .item1').addClass('active');
+				}
+
+				if(percent >= '0.2993'){
+					$('.weed2').hide()
+					$('.man2 .first-screen .man').addClass('st2');
+					$('.lifs .item2').addClass('active');
+				}
+
+				if(percent >= '0.4116'){
+					$('.weed3').hide()
+					$('.man2 .first-screen .man').addClass('st3');
+					$('.lifs .item3').addClass('active');
+				}
+
+				if(percent >= '0.5613'){
+					$('.weed4').hide()
+					$('.man2 .first-screen .man').addClass('st4');
+					$('.lifs .item4').addClass('active');
+				}
+
+				if(percent >= '0.6735'){
+					$('.weed5').hide()
+					$('.man2 .first-screen .man').addClass('st5');
+					$('.lifs .item5').addClass('active');
+				}
+				if(percent >= '0.7334'){
+					$('.first-screen').addClass('first-abs');
+				}
+				if(percent < '0.7334'){
+					$('.first-screen').removeClass('first-abs');
+				}
+				if(percent >= '0.9600'){
+					$('.first-screen').hide()
+					$('.prot').addClass('prot-end');
+					$('body').addClass('oh-y');
+					document.location.href = 'http://egorwebfrontdev.tk/scroll/examples/cormier-finish.htm'
+				}
+            }
+        });
+    }(jQuery));
+    </script>
+	<script>
+		 jQuery(document).ready(function($){
+		 	//adaptive for screen 15
+			var wh = $(window).height()
+			if(wh <= 900){
+				$('.container').addClass('screen15');
+			}
+		});
+	</script>
+</body>
+</html>
